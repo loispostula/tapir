@@ -175,6 +175,12 @@ quarkus:
      s3:
        endpoint-override: http://localhost:4566
        path-style-access: true
+       aws:
+         credentials:
+           type: static
+           static-provider:
+             access-key-id: test
+             secret-access-key: test
      quinoa:
        dev-server:
          port: 3000
@@ -207,3 +213,9 @@ quarkus:
     s3:
       endpoint-override: http://localhost:4566
       path-style-access: true
+      aws:
+        credentials:
+          type: static
+          static-provider:
+            access-key-id: test
+            secret-access-key: test
